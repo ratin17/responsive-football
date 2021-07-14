@@ -1,6 +1,4 @@
-/* --------------------
-    for common design 
---------------------- */
+
 body{
     background-color: white;
     width: 1440px;
@@ -9,7 +7,7 @@ body{
 }
 
 /* -------------------------
-    navigation bar designe
+   header design
 --------------------------- */
 .nav-bar{
     display: flex;
@@ -24,8 +22,7 @@ body{
     list-style-type: none;
     padding: 52px 18px 0px 18px;
 }
-/* text inside navigation bar 
----------------------------- */
+
 .navigation a{
     text-decoration: none;
     color: white;
@@ -33,8 +30,7 @@ body{
     font-size: 16px;
 }
 
-/* login button and icon desing 
------------------------------------ */
+
 .login{
     display: flex;
     align-items: center;
@@ -53,9 +49,7 @@ span{
 
 
 
-/* ------------------------
-    for header part design 
--------------------------- */
+
 .first-heading{
     font-size: 64px;
 }
@@ -63,21 +57,19 @@ span{
     background-color: rgb(45, 37, 160);
     width: 100%;
 }
-/* header section designe 
---------------------------- */
-.heading-img-container {
+
+.banner_container {
     display: flex;
     align-items: center;
 }
-.cop-text, .cop-img{
+.header_text, .header_banner{
     width: 50%;
 }
-/* banar image designe 
----------------------- */
-.cop-img img{
+
+.header_banner img{
     width: 80%;
 }
-.cop-text{
+.header_text{
     color: white;
     text-align: left;
     margin: 100px;
@@ -87,8 +79,7 @@ span{
     margin: 10px;
 }
 
-/* designe for all button 
--------------------------- */
+
 .button{
     background-color: #E02C6D;
     color: white;
@@ -99,17 +90,24 @@ span{
     padding: 10px 24px;
 }
 
-.cop-text:hover a{
+.header_text:hover a{
     font-size: 30px;
     transition: font-size 3s;
+}
+
+.header_banner:hover img{
+    transform: scale(1.3);
+    transition:transform 2s ease-in ;
 }
 
 
 
 
 
+
+
 /* ------------------------
-    for players designe
+   main part: player
 -------------------------- */
 main{
     display: flex;
@@ -117,24 +115,21 @@ main{
     flex-direction: column;
     align-items: center;
 }
-/* all players section designe 
------------------------------- */
+
 .all-players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 1200px;
 }
-/* player box designe (common)
------------------------------ */
+
 .player{
-    /* width: 30%; */
+    
     margin: 10px;
     padding: 15px;
     background-color: white;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-/* player image size and name 
------------------------------ */
+
 .player img{
     width: 100%;
 }
@@ -148,11 +143,8 @@ main{
 
 
 
-
-
-
 /* --------------------
-    for All Highlights 
+  Extra part
 ---------------------- */
 
 .match{
@@ -162,8 +154,7 @@ main{
     justify-content: center;
     align-items: center;
 }
-/* box sizing 
--------------- */
+
 .match-description, .match-img{
     width: 100%;;
 }
@@ -180,21 +171,11 @@ main{
 
 
 
-
-
-
-
-
-/* ----------------------
-    live match designe 
-------------------------- */
-
 .live-match{
     display: flex;
 
 }
-/* esch box designe 
---------------------- */
+
 .live-box {
     position: relative;
     width: 600px;
@@ -203,11 +184,8 @@ main{
     margin: 20px;
 }
 
-.live-description{
-    display: none;
-} 
-/* to make the image and text hover 
------------------------------------ */
+
+
 .live-box:hover .live-description{
     display: block;
     position: absolute;
@@ -229,14 +207,8 @@ main{
 
 
 
-
-
-
-
-
-
 /* ---------------------
-    for footer section 
+   footer
 ---------------------- */
 footer{
     display: flex;
@@ -248,21 +220,19 @@ footer{
     display: flex;
     justify-content: center;
 }
-/* icon desing 
--------------- */
+
 .icon i {
     height: 30px;
     width: 30px;
     margin: 0px 10px;
     color: #E02C6D;
 }
-/* footer image design 
----------------------- */
+
 .footer-img img{
     width: 485px;
     height: 100px;
 }
-/* background color for button  */
+
 .bg-color-button:hover{
     background-color: #6C6C6C;
 }
@@ -270,14 +240,9 @@ footer{
 
 
 
-
-/* --------------------------------
-    responsive designe for Mobile
----------------------------------- */
 @media only screen and (max-width: 660px) {
 
-/* for body  
--------------*/
+
 body{
     width: 100%;
     margin: 0;
@@ -289,8 +254,7 @@ body{
     padding: 10px, 24px, 10px, 24px;
 }
 
-/* for header part design 
--------------------------- */
+
 .first-heading{
     font-size: 30px;
 }
@@ -321,16 +285,11 @@ body{
 }
 
 
-/* palyers sectio 
-------------------- */
-
 .all-players{
     grid-template-columns: repeat(1, 1fr);
     width: 77%;
 }
 
-/* match section  
--------------------*/
 .match{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -339,8 +298,7 @@ body{
 .match-description h1{
     font-size: 30px;
 }
-/* footer section  
--------------------*/
+
 .footer-img img{
     width: 300px;
     height: auto;
@@ -357,8 +315,7 @@ body{
     max-width: 400px;
     overflow: hidden;
 }
-/* hover part 
----------------- */
+
 .live-description{
     display: none;
 } 
@@ -389,11 +346,10 @@ body{
 
 
 /* ------------------------------------
-    responsive designe for pad/tablet
+     tablet
 -------------------------------------- */
 @media only screen and (min-width: 660px) and (max-width: 1024px) {
-    /* for all palyers 
-    ------------------- */
+  
     .all-players{
         grid-template-columns: repeat(2,1fr);
     }
@@ -401,8 +357,7 @@ body{
     .live-description{
         display: none;
     } 
-    /* hover the text on the image 
-    --------------------------------- */
+    
     .live-box:hover .live-description{
         display: block;
         position: absolute;
